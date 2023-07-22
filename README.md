@@ -7,6 +7,10 @@ Question: Write a shell script word typing game with 100 words and each word to 
 
 Awnser:
 
+###
+
+Creating a shell script for a word typing game involves using a loop to present words to the user, measuring the time it takes for each word, and keeping track of the score. Here's a simple implementation of the game:
+
 ```
 #!/bin/bash
 
@@ -67,3 +71,7 @@ done
 calculate_score $correct_count
 
 ```
+
+Save this script to a file, e.g., word_typing_game.sh, and make it executable using chmod +x word_typing_game.sh. Then, run the script with ./word_typing_game.sh.
+
+The game will present a random word from the list and give the user 5 seconds to type the word correctly. The user can keep typing words until they type 'end' to finish the game. After the game ends, the script will display the user's score based on the number of correctly typed words out of 100.
